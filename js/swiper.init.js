@@ -41,26 +41,44 @@ const swiper = new Swiper('.swiper-unboard', {
       nextEl: '.item-right',
       prevEl: '.item-left',
     },
-    /*breakpoints:{
+    breakpoints:{
+      200:{
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      320:{
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      464:{
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 38
+      },
       768: {
         slidesPerView: 2,
-        slidesPerGroup: 2
+        slidesPerGroup: 2,
+        spaceBetween: 38
       },
       1024: {
         slidesPerView: 2,
         slidesPerGroup: 2
       },
-      1920: {
+      1274:{
         slidesPerView: 3,
         slidesPerGroup: 3
-      }
-    }*/
+      },
+      /*1920: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      }*/
+    }
     // And if we need scrollbar
     /*scrollbar: {
       el: '.swiper-scrollbar',
     },*/
   });
-  const swiper6 = new Swiper('.galeri__swiper_1024', {
+  /*const swiper6 = new Swiper('.galeri__swiper_1024', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -97,8 +115,8 @@ const swiper = new Swiper('.swiper-unboard', {
     /*scrollbar: {
       el: '.swiper-scrollbar',
     },*/
-  });
-  const swiper7 = new Swiper('.galeri__swiper_768', {
+ /* });*/
+  /*const swiper7 = new Swiper('.galeri__swiper_768', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -132,16 +150,16 @@ const swiper = new Swiper('.swiper-unboard', {
       },
     }
 
-  });
+  });*/
 
-  const swiper5 = new Swiper('.galeri__swiper_320', {
+  /*const swiper5 = new Swiper('.galeri__swiper_320', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
     autoplay: false,
-    /*spaceBetween: 50,*/
+
     // If we need pagination
     pagination: {
       el: '.galery__block-title-pages',
@@ -168,7 +186,7 @@ const swiper = new Swiper('.swiper-unboard', {
     /*scrollbar: {
       el: '.swiper-scrollbar',
     },*/
-  });
+  /*});*/
 
   const swiper3 = new Swiper('.swiper-events',{
     direction: 'horizontal',
@@ -208,8 +226,8 @@ const swiper = new Swiper('.swiper-unboard', {
         slidesPerView: 1,
       },
       320:{
-        slidesPerView: 2,
-        spaceBetween: 15,
+        slidesPerView: 1,
+        /*spaceBetween: 15,*/
       },
       464:{
         slidesPerView: 2,

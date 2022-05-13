@@ -18,29 +18,29 @@
   <header class="header-nav__block1">
     <div class="container header__display flex">
       <div class="header-nav__block1-line header-nav__block1-hamb-menu flex">
-        <div class="header-nav__hamburger-menu flex">
+        <button class="btn-restart header-nav__hamburger-menu flex">
           <div class="first-rectangle"></div>
           <div class="second-rectangle"></div>
           <div class="third-rectangle"></div>
-        </div>
+        </button>
       </div>
       <div class="header-nav__block1-line header-nav__block1-logo flex">
         <div class="block1-logo__img"></div>
       </div>
       <div class="header-nav__block1-line header-nav__block1-menu flex">
-        <div class="block1-menu__items" tabindex="0">О&nbsp;нас</div>
-        <div class="block1-menu__items" tabindex="0">Галерея</div>
-        <div class="block1-menu__items" tabindex="0">Каталог</div>
-        <div class="block1-menu__items" tabindex="0">События</div>
-        <div class="block1-menu__items" tabindex="0">Проекты</div>
-        <div class="block1-menu__items" tabindex="0">Контакты</div>
+        <button class="btn-restart block1-menu__items" tabindex="0">О&nbsp;нас</button>
+        <button class="btn-restart block1-menu__items" tabindex="0">Галерея</button>
+        <button class="btn-restart block1-menu__items" tabindex="0">Каталог</button>
+        <button class="btn-restart block1-menu__items" tabindex="0">События</button>
+        <button class="btn-restart block1-menu__items" tabindex="0">Проекты</button>
+        <button class="btn-restart block1-menu__items" tabindex="0">Контакты</button>
       </div>
-      <div class="header-nav__block1-line header-nav__block1-enter flex">
+      <button class="btn-restart header-nav__block1-line header-nav__block1-enter flex">
         <div class=" block1-enter__box" tabindex="0">Войти</div>
-      </div>
-      <div class="header-nav__block1-line header-nav__block1-find flex">
+      </button>
+      <button class="btn-restart header-nav__block1-line header-nav__block1-find flex">
         <div class="block1-find__box"></div>
-      </div>
+      </button>
     </div>
   </header>
   <section class="unboard swiper-unboard swiper">
@@ -170,15 +170,9 @@
   </section>
   <section class="galery">
     <div class="container galery__global-1920">
+
       <div class="galery__block-title flex">
         <h2 class="galery__title">Галерея</h2>
-        <div class="galery__block-title-pages flex">
-          <div class="block-title-pages__items item-left"></div>
-          <div class="swiper-pagination block-title-pages__items item-center"></div>
-          <div class="block-title-pages__items item-right"></div>
-        </div>
-      </div>
-      <div class="galery-flex flex">
         <form action="" class="galery__box">
           <p class="galery__box-select-title">Фильтр:</p>
           <div class="select">
@@ -216,9 +210,12 @@
             </li>
           </ul>
         </form>
-        <div class="galeri__swiper swiper">
+      </div>
+
+      <div class="galery-flex flex">
+        <div class="galeri__swiper swiper flex">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper hegth_wriper">
             <!-- Slides -->
             <div class="swiper-slide galery-flex__items galery-flex__items-img1"></div>
             <div class="swiper-slide galery-flex__items galery-flex__items-img2"></div>
@@ -229,7 +226,11 @@
           </div>
           <!-- If we need pagination
           <div class="swiper-pagination"></div>-->
-
+          <div class="wripper_user flex">
+            <button class="btn-restart block-title-pages__items item-left"></button>
+            <div class="swiper-pagination swiper-pagination__position"></div><!--block-title-pages__items item-center-->
+            <button class="btn-restart block-title-pages__items item-right"></button>
+          </div>
           <!-- If we need navigation buttons
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>-->
@@ -242,223 +243,6 @@
         <div class="galery-flex__items galery-flex__items-img3"></div>-->
       </div>
 
-    </div>
-    <div class="container galery__global-1024">
-      <div class="galery__block-title flex">
-        <h2 class="galery__title">Галерея</h2>
-        <div class="galery__block-title-pages flex">
-          <div class="block-title-pages__items item-left"></div>
-          <div class="swiper-pagination block-title-pages__items item-center"></div>
-          <div class="block-title-pages__items item-right"></div>
-        </div>
-      </div>
-      <div class="galery-flex flex">
-        <form action="" class="galery__box">
-          <p class="galery__box-select-title">Фильтр:</p>
-          <div class="select">
-            <div id="select_7" class="select__input-galery" tabindex="0" data-type="input">
-              <span data-type="value" class="select_title">Живопись</span>
-              <i class="fa fa-chevron-down" data-type="arrow"></i>
-            </div>
-            <div data-simplebar id="select_down7" class="select__dropdown-galery close scroll-block">
-              <ul class="select__dropdown-list ">
-                <li class="select__item-galery" data-type="item" data-id="7">Живопись</li>
-                <li class="select__item-galery" data-type="item" data-id="8">Графика</li>
-                <li class="select__item-galery" data-type="item" data-id="9">Гравюра</li>
-              </ul>
-            </div>
-          </div>
-
-          <ul class="galery__checkbox">
-            <li class="galery__checkbox-items">
-              <label for="century19" class="galery-item__label">XIX век</label>
-              <input type="checkbox" class="galery__check-nativ" name="century19" id="century19_3">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-            <li class="galery__checkbox-items">
-              <label for="century20" class="galery-item__label">XX век</label>
-              <input type="checkbox" class="galery__check-nativ" name="century20" id="century20_3">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-            <li class="galery__checkbox-items">
-              <label for="century21" class="galery-item__label">Современность</label>
-              <input type="checkbox" class="galery__check-nativ" name="century21" id="century21_3">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-          </ul>
-        </form>
-        <div class="swiper galeri__swiper_1024">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide galery-flex__items galery-flex__items-img1"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img2"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img3"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img4"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img5"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img6"></div>
-          </div>
-          <!-- If we need pagination
-          <div class="swiper-pagination"></div>-->
-
-          <!-- If we need navigation buttons
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>-->
-
-          <!-- If we need scrollbar
-          <div class="swiper-scrollbar2"></div>-->
-        </div>
-        <!--<div class="galery-flex__items galery-flex__items-img1"></div>
-        <div class="galery-flex__items galery-flex__items-img2"></div>
-        <div class="galery-flex__items galery-flex__items-img3"></div>-->
-      </div>
-
-    </div>
-    <div class="container galery__global-768">
-      <div class="galery__block-title flex">
-        <h2 class="galery__title">Галерея</h2>
-      </div>
-      <div class="galery-flex flex">
-        <form action="" class="galery__box">
-          <p class="galery__box-select-title">Фильтр:</p>
-          <div class="select">
-            <div id="select_8" class="select__input-galery" tabindex="0" data-type="input">
-              <span data-type="value" class="select_title">Живопись</span>
-              <i class="fa fa-chevron-down" data-type="arrow"></i>
-            </div>
-            <div data-simplebar id="select_down8" class="select__dropdown-galery close scroll-block">
-              <ul class="select__dropdown-list ">
-                <li class="select__item-galery" data-type="item" data-id="7">Живопись</li>
-                <li class="select__item-galery" data-type="item" data-id="8">Графика</li>
-                <li class="select__item-galery" data-type="item" data-id="9">Гравюра</li>
-              </ul>
-            </div>
-          </div>
-
-          <ul class="galery__checkbox">
-            <li class="galery__checkbox-items">
-              <label for="century19" class="galery-item__label">XIX век</label>
-              <input type="checkbox" class="galery__check-nativ" name="century19" id="century19_3">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-            <li class="galery__checkbox-items">
-              <label for="century20" class="galery-item__label">XX век</label>
-              <input type="checkbox" class="galery__check-nativ" name="century20" id="century20_3">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-            <li class="galery__checkbox-items">
-              <label for="century21" class="galery-item__label">Современность</label>
-              <input type="checkbox" class="galery__check-nativ" name="century21" id="century21_3">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-          </ul>
-        </form>
-        <div class="galery__block-title-pages flex">
-          <div class="block-title-pages__items item-left"></div>
-          <div class="swiper-pagination block-title-pages__items item-center"></div>
-          <div class="block-title-pages__items item-right"></div>
-        </div>
-        <div class="swiper galeri__swiper_768">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide galery-flex__items galery-flex__items-img1"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img2"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img3"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img4"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img5"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img6"></div>
-          </div>
-          <!-- If we need pagination
-          <div class="swiper-pagination"></div>-->
-
-          <!-- If we need navigation buttons
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>-->
-
-          <!-- If we need scrollbar
-          <div class="swiper-scrollbar2"></div>-->
-        </div>
-      </div>
-    </div>
-    <div class="container galery__global-320 flex">
-      <div class="galery__block-title flex">
-        <h2 class="galery__title">Галерея</h2>
-      </div>
-      <div class="galery-flex flex">
-        <form action="" class="galery__box">
-          <p class="galery__box-select-title">Фильтр:</p>
-          <div class="select">
-            <div id="select_6_2" class="select__input-galery" tabindex="0" data-type="input">
-              <span data-type="value" class="select_title">Живопись</span>
-              <i class="fa fa-chevron-down" data-type="arrow"></i>
-            </div>
-            <div data-simplebar id="select_down6_2" class="select__dropdown-galery close scroll-block">
-              <ul class="select__dropdown-list ">
-                <li class="select__item-galery" data-type="item" data-id="7">Живопись</li>
-                <li class="select__item-galery" data-type="item" data-id="8">Графика</li>
-                <li class="select__item-galery" data-type="item" data-id="9">Гравюра</li>
-              </ul>
-            </div>
-          </div>
-
-          <ul class="galery__checkbox">
-            <li class="galery__checkbox-items">
-              <label for="century19" class="galery-item__label">XIX век</label>
-              <input type="checkbox" class="galery__check-nativ" name="century19" id="century19_2">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-            <li class="galery__checkbox-items">
-              <label for="century20" class="galery-item__label">XX век</label>
-              <input type="checkbox" class="galery__check-nativ" name="century20" id="century20_2">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-            <li class="galery__checkbox-items">
-              <label for="century21" class="galery-item__label">Современность</label>
-              <input type="checkbox" class="galery__check-nativ" name="century21" id="century21_2">
-              <span class="galery-item__custom-check"></span>
-
-            </li>
-          </ul>
-        </form>
-        <div class="galeri__swiper_320 swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide galery-flex__items galery-flex__items-img1"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img2"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img3"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img4"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img5"></div>
-            <div class="swiper-slide galery-flex__items galery-flex__items-img6"></div>
-          </div>
-          <!-- If we need pagination
-          <div class="swiper-pagination"></div>-->
-
-          <!-- If we need navigation buttons
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>-->
-
-          <!-- If we need scrollbar
-          <div class="swiper-scrollbar2"></div>-->
-        </div>
-        <!--<div class="galery-flex__items galery-flex__items-img1"></div>
-        <div class="galery-flex__items galery-flex__items-img2"></div>
-        <div class="galery-flex__items galery-flex__items-img3"></div>-->
-      </div>
-      <div class="galery__block-title-pages flex">
-        <div class="block-title-pages__items item-left"></div>
-        <div class="swiper-pagination block-title-pages__items item-center"></div>
-        <div class="block-title-pages__items item-right"></div>
-      </div>
     </div>
   </section>
   <section class="catalog">
